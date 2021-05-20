@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { VueLoaderPlugin } = require('vue-loader')
+const { VueLoaderPlugin } = require('vue-loader');
 const path = require('path');
 
 
@@ -20,11 +20,11 @@ module.exports = {
     rules: [
       { test: /\.js$/, use: {
         loader: 'babel-loader',
-      options: { presets: ['@babel/preset-env']}
-    },
+        options: { presets: ['@babel/preset-env']}
+      },
       },
       { test: /\.ts$/, loader: 'ts-loader',
-      options: { appendTsSuffixTo: [/\.vue$/] } },
+        options: { appendTsSuffixTo: [/\.vue$/] } },
       { test: /\.vue$/, loader: 'vue-loader' },
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
     ]

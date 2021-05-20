@@ -14,4 +14,4 @@ db.authenticate()
   .then(() => console.info('CONNECTED TO DATABASE'))
   .catch((err = 'err') => console.warn('DB ERROR', err));
 
-  //first connection
+//first connection
